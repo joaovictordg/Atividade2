@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+#include "tcircuito.h"
+
+int main() {
+ 
+ tcircuito c;
+
+ cout << "Digite Resistencia 1 do circuito:";
+ cin >> c.r1;
+ cout << "\nDigite Resistencia 2 do circuito:";
+ cin >> c.r2;
+ cout << "\nDigite tensao da fonte do circuito:";
+ cin >> c.v1;
+  
+  cout << "\nResistências em série:  " << serie(c);
+     cout << "\nResistências em paralelo:  " << par(c);
+         cout << "\nCorrente do circuito:  " << corrent(c);
+             cout << "\nPortencia do circuito:  " << pot(c);
+
+return 0;
+}
+      
